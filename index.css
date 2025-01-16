@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.logo h1 {
+    font-family: 'Bebas Neue', sans-serif; /* Application de la police Poppins */
+    font-size: 36px; /* Taille de la police */
+    font-weight: 600; /* Poids de la police */
+color: #ebe6e6f3;
+    text-transform: uppercase; /* Mettre en majuscule */
+    letter-spacing: 2px; /* Espacement des lettres */
+    background: linear-gradient(45deg, #d4af37, #ffcc00, #f0e68c); /* Dégradé doré */
+    -webkit-background-clip: text; /* Préfixe pour WebKit */
+    -moz-background-clip: text; /* Préfixe pour Firefox (si supporté dans le futur) */
+    background-clip: text; /* Standard */
+    color: transparent; /* Texte transparent pour afficher le dégradé */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Ombre pour profondeur */
+}
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+          height: 60px;
+            border-radius: 80%;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #444;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/istockphoto-510957702-1024x1024.jpg') center/cover no-repeat;
+            color: #fff;
+            height: 50%;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff5722;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .btn:hover {
+            background-color: #e64a19;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .products-grid, .videos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card, .video-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+
+        .product-card img, .video-card iframe {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3, .video-card p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .product-card .price {
+            color: #ff5722;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-card .btn {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .product-card .btn:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .form-section {
+            padding: 50px 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .form-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+          /* Responsive Design */
+        /* Cacher le texte dans la navigation pour les petits écrans */
+@media (max-width: 768px) {
+   
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Masquer le texte, mais garder les icônes */
+    nav ul li a span {
+        display: none;
+    }
+
+
+    nav ul {
+        gap: 15px;
+    }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero .btn {
+                font-size: 0.9rem;
+            }
+
+            header {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                height: 70px;
+            }
+
+            nav ul {
+                justify-content: flex-start;
+            }
+            .logo h1{
+               font-size: small;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .hero .btn {
+                font-size: 0.8rem;
+                padding: 8px 16px;
+            }
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        nav {
+            position: relative;
+        }
+        .toggle-btn {
+            display: none; /* Masqué par défaut */
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10; /* Assurez-vous que le toggle est au-dessus */
+        }
+        
+        @media (max-width: 768px) {
+            .toggle-btn {
+                display: block; /* Afficher sur petits écrans */
+            }
+        
+            nav ul {
+                display: none; /* Masquer le menu par défaut */
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                background-color: #222;
+                padding: 10px 20px;
+                border-radius: 8px;
+                z-index: 1;
+            }
+        
+           
+    nav ul.active {
+        display: flex; /* Afficher le menu quand "active" */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espacement entre les éléments du menu */
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    /* Masquer le texte dans les liens lorsque le menu est sur mobile */
+    nav ul li a span {
+        display: block; /* Afficher le texte sur les petits écrans */
+        margin-left: 10px;
+    }
+        }
+        
+
+        .team-collaboration {
+            display: flex;
+            align-items: center; /* Aligne le contenu verticalement */
+            gap: 20px; /* Contrôle l'espace horizontal entre l'image et la description */
+            padding: 20px; /* Ajuste le padding global */
+            background: linear-gradient(135deg, #f0f4ff, #e9ebf0); /* Dégradé bleu clair */
+            border-radius: 15px; /* Arrondit les coins de la section */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+        
+        }
+        
+        .image-container img {
+            max-width: 100%; /* Assure que l'image s'adapte à son conteneur */
+            height: auto;
+            border-radius: 10px; /* Ajoute un effet légèrement arrondi */
+        }
+        
+        .text-container {
+            flex: 1; /* Fait en sorte que le texte occupe tout l'espace restant */
+            text-align: left; /* Aligne le texte à gauche */
+        }
+        
+        .text-container h2 {
+            margin-bottom: 10px; /* Réduit l'espace sous le titre */
+            font-size: 1.9rem; /* Taille ajustable pour un rendu élégant */
+            font-family: Georgia, serif;
+        }
+        
+        .text-container p {
+            margin-bottom: 10px; /* Réduit l'espace sous le paragraphe */
+            line-height: 2.5; /* Améliore la lisibilité */
+            font-size: 20px;
+            font-family: Georgia, serif;
+        }
+        
+        .text-container ul {
+            list-style: none; /* Supprime les puces des listes */
+            padding: 0;
+        }
+        
+        .text-container ul li {
+            margin-bottom: 5px; /* Réduit l'espacement entre les éléments de la liste */
+            font-size: 20px;
+            font-family: Georgia, serif;
+        }
+
+        @media (max-width: 768px) {
+            .team-collaboration {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .image-container img {
+                max-width: 100%;
+            }
+        
+            .text-container {
+                width: 100%;
+            }
+        }        
+
+      
