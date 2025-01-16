@@ -33,8 +33,9 @@ color: #ebe6e6f3;
         }
 
         header img {
-          height: 60px;
-            border-radius: 80%;
+          height: 50px;
+          width: 50px;
+            border-radius: 50%;
         }
 
         nav ul {
@@ -63,7 +64,7 @@ color: #ebe6e6f3;
         .hero {
             text-align: center;
             padding: 50px 20px;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/istockphoto-510957702-1024x1024.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/istockphoto-510957702-1024x1024.jpg') center/cover no-repeat;
             color: #fff;
             height: 50%;
         }
