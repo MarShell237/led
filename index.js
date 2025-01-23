@@ -147,3 +147,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+// Assurez-vous que le DOM est chargé avant d'ajouter les événements
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.contact-form');
+
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Empêche le rechargement de la page lors de la soumission du formulaire
+
+            const formData = new FormData(form);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                message: formData.get('message'),
+            };
+
+            try {
+                const response = await fetch('http://localhost:5000/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Erreur lors de l\'envoi de l\'email');
+                }
+
+                const responseData = await response.json();
+                alert(responseData.message); // Affiche un message si l'email est envoyé avec succès
+            } catch (error) {
+                alert(error.message); // Affiche une erreur si l'envoi échoue
+            }
+        });
+    } else {
+        console.warn('Formulaire non trouvé');
+    }
+});
